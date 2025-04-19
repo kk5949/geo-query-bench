@@ -1,1 +1,1 @@
-# geo-query-bench
+# GeoQueryBench
