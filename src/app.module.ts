@@ -22,7 +22,7 @@ import {SeedModule} from "./seed/seed.module";
             imports: [ConfigModule],
             inject: [ConfigService],  // 클래스 자체를 배열에 넣음 (올바른 방식)
             useFactory: (configService: ConfigService) => ({
-                type: 'postgres',
+                type: configService.get('DB_TYPE'),
                 host: configService.get('DB_HOST'),
                 port: configService.get<number>('DB_PORT'),
                 username: configService.get('DB_USERNAME'),

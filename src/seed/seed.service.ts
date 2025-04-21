@@ -16,7 +16,7 @@ export class SeedService {
         const seoulCenter = { latitude: 37.5665, longitude: 126.9780 };
 
         const stores = [];
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 1000; i++) {
             // 서울 중심부 주변에 랜덤 위치 생성 (대략 20km 반경 내)
             const randomLat = seoulCenter.latitude + (Math.random() - 0.5) * 0.3;
             const randomLng = seoulCenter.longitude + (Math.random() - 0.5) * 0.3;

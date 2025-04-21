@@ -47,4 +47,8 @@ export class StoresService {
 
     return stores;
   }
+
+    create(createStoreDto: CreateStoreDto) {
+        return this.storeRepository.save(createStoreDto);
+    }
 }
